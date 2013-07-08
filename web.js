@@ -7,7 +7,6 @@ var fs = require('fs');
 
 app.get('/', function(request, response) {
     var buffer = Buffer(fs.readFileSync('index.html'));
-    // response.send('Hello World 2!');
     response.send(buffer.toString());
 });
 
